@@ -139,6 +139,26 @@ footer{background:var(--ink);padding:5rem 3.5rem 3rem}
 .ft-col a:hover{color:rgba(13,200,205,.8)}
 .ft-bot{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:rgba(255,255,255,.2)}
 .ft-wa{background:var(--teal);color:white;padding:.5rem 1.25rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border-radius:2px}
+
+/* MOBILE OPTIMIZATIONS */
+@media(max-width: 640px) {
+  html { font-size: 15px; }
+  h1, .hero-h1, .sec-h2 { line-height: 1.2; word-break: break-word; }
+  p { line-height: 1.6; }
+  section { padding: 2rem 1rem !important; }
+  .work-grid, .doctors-grid, .services-list, .about-facts, .cform, .bf-group, .cf { grid-template-columns: 1fr !important; }
+  .cf-2, .bf-2col { grid-template-columns: 1fr !important; gap: 1rem; }
+  button, .btn-gold, .btn-outline-teal, .btn-ghost, .c-submit, .book-btn { width: 100%; padding: 1rem !important; font-size: 1rem; }
+  .hero, .hero-l, .hero-r { grid-template-columns: 1fr !important; padding: 2rem 1rem !important; }
+  nav { padding: 1rem !important; }
+  footer { padding: 2rem 1rem !important; }
+  .fi, .ft, .fbot { grid-template-columns: 1fr !important; gap: 2rem; }
+}
+@media(max-width: 360px) {
+  html { font-size: 14px; }
+  section { padding: 1.5rem 0.75rem !important; }
+  button { font-size: 0.875rem; padding: 0.75rem !important; }
+}
 </style>
 </head>
 <body>
@@ -414,4 +434,5 @@ function showStatus(msg, type) {
 </script>
 </body>
 </html>
+
 
